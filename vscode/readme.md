@@ -6,7 +6,7 @@
 * http://evols-atirev.tistory.com/14
 
 ---
-### Pull source from Github
+### Pull from Github
 1. create project foler
 2. git init
 3. pull from...
