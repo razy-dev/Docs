@@ -1,4 +1,30 @@
 # NodeJs
+## Install
+```
+curl -sL https://rpm.nodesource.com/setup_11.x | sudo bash -
+yum install nodejs
+
+
+npm install pm2 -g
+
+cd ~/uix.clesson.net
+vi ecosystem.config.js
+module.exports = {
+  apps : [{
+    name      : 'uix.clesson.net',
+    script    : 'npm',
+    args      : 'start',
+    env: {
+      NODE_ENV: 'development'
+    },
+    env_production : {
+      NODE_ENV: 'production'
+    }
+  }],
+};
+pm2 start ecosystem.config.js
+```
+
 ## Upgrade NodeJs & npm
 ---
 ### Unix/Linux
