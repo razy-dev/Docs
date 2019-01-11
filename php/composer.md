@@ -1,8 +1,8 @@
 # Composer
 
-## Install
-### in Windows
-#### set config
+## in Windows
+### Install
+### Config
 * Set COMPOSER_HOME
 	1. Open Command prompt window, and run ```composer -vvv```
 		- See ```Failed to initialize global composer: Composer could not find the config file: C:\Users\razy\AppData\Roaming\Composer\composer.json```
@@ -18,5 +18,14 @@
 	5. Reopen Command prompt window, and run ```composer -vvv```.
 		- See ```Failed to initialize global composer: Composer could not find the config file: D:\02.WorkEnv\0.XAMPP\composer\composer.json```
 
-### in Linux
+---
+## in Linux
+### Install
+```
+]# mkdir /usr/share/composer
+]# curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/share
+]# ln -s /usr/share/composer.phar /usr/local/bin/composer
+```
+
+### Config
 
